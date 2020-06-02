@@ -4,6 +4,10 @@
 # into the string here.
 #Sys.setenv(NEUPRINT_APPLICATION_CREDENTIALS = "replace this")
 
+# Note to self: copy contents of file "r_token_env_line" (NOT tracked by git)
+# here to recreate one of my past attempts that seemed to at least set the
+# token correctly.
+
 library(reticulate)
 
 use_virtualenv("./venv", required = TRUE)
