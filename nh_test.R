@@ -16,6 +16,13 @@ util <- import("neuprint_helper.util")
 
 out <- util$pn_kc_connections()
 
+# Many ways the above can fail should result in some error output, with this
+# line not being reached (but actually check a failure...)
+print("reticulate interface to neuprint_helper seems to be working!")
+
+# TODO do some check that above is reasonable (or better yet, call pytest tests
+# after implementing some of them in neuprint_helper)
+
 #virtualenv_create("r-reticulate")
 
 # TODO make sure the below happens in a venv (or at least doesn't require sudo)
